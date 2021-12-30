@@ -1,0 +1,983 @@
+<Solution>
+  <PropertyGroup Name="gameMenu" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="csb">
+          <Project Name="gameMenu.csd" Type="Layer" />
+          <Project Name="gameScene.csd" Type="Layer" />
+          <Project Name="lv.csd" Type="Layer" />
+          <Project Name="play.csd" Type="Layer" />
+        </Folder>
+        <Folder Name="fonts">
+          <TTF Name="arial.ttf" />
+          <TTF Name="Marker Felt.ttf" />
+        </Folder>
+        <Folder Name="PNG">
+          <Folder Name="CollisionFx">
+            <Folder Name="01">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+              <Image Name="5.png" />
+              <Image Name="6.png" />
+            </Folder>
+            <Folder Name="02">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+              <Image Name="5.png" />
+              <Image Name="6.png" />
+              <Image Name="7.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="Cops">
+            <Folder Name="2Tires">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="4Tires">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="Bike01">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="Bike02">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="Car">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Image Name="Cop.png" />
+          </Folder>
+          <Folder Name="Items">
+            <Folder Name="01">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="02">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="03">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="04">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="BlankTemp">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="Motorcycle Body">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+          </Folder>
+          <Folder Name="Obstacle">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+          </Folder>
+          <Folder Name="Riders">
+            <Folder Name="01">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders01.png" />
+            </Folder>
+            <Folder Name="02">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders02.png" />
+            </Folder>
+            <Folder Name="03">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders03.png" />
+            </Folder>
+            <Folder Name="04">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders04.png" />
+            </Folder>
+            <Folder Name="05">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders05.png" />
+            </Folder>
+            <Folder Name="06">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders06.png" />
+            </Folder>
+            <Folder Name="07">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders07.png" />
+            </Folder>
+            <Folder Name="08">
+              <Folder Name="Hit01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Hit03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw01">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw02">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Folder Name="Throw03">
+                <Folder Name="Left">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+                <Folder Name="Right">
+                  <Image Name="1.png" />
+                  <Image Name="2.png" />
+                  <Image Name="3.png" />
+                  <Image Name="4.png" />
+                </Folder>
+              </Folder>
+              <Image Name="Riders08.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="RoadTile">
+            <Folder Name="01">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+            </Folder>
+            <Folder Name="02">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+            </Folder>
+            <Folder Name="03">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+            </Folder>
+            <Folder Name="04">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+            </Folder>
+            <Image Name="Finish.png" />
+            <Image Name="Start.png" />
+          </Folder>
+          <Folder Name="Tires">
+            <Folder Name="01">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="02">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="03">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="04">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="05">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="06">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="07">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+            <Folder Name="08">
+              <Image Name="1.png" />
+              <Image Name="2.png" />
+              <Image Name="3.png" />
+              <Image Name="4.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="UserInterface">
+            <Image Name="ActionBtn.png" />
+            <Image Name="AddBtn.png" />
+            <Image Name="Bar.png" />
+            <Image Name="Bar01.png" />
+            <Image Name="Bar02.png" />
+            <Image Name="Bar03.png" />
+            <Image Name="Bartransparent01.png" />
+            <Image Name="bg.png" />
+            <Image Name="bgBoxTransparent.png" />
+            <Image Name="bgScreen01.png" />
+            <Image Name="bgScreen02.png" />
+            <Image Name="bgScreen03.png" />
+            <Image Name="bgWeapon.png" />
+            <Image Name="bikeBtn.png" />
+            <Image Name="bikeBtn1.png" />
+            <Image Name="BlackBar.png" />
+            <Image Name="box01.png" />
+            <Image Name="box02.png" />
+            <Image Name="Btn01.png" />
+            <Image Name="Btn02.png" />
+            <Image Name="Btn03.png" />
+            <Image Name="Btn04.png" />
+            <Image Name="Btn05.png" />
+            <Image Name="Btn06.png" />
+            <Image Name="car.png" />
+            <Image Name="CheckList.png" />
+            <Image Name="ChooseRaceBar.png" />
+            <Image Name="Clock.png" />
+            <Image Name="Cross.png" />
+            <Image Name="crossBtn.png" />
+            <Image Name="EmptyBox01.png" />
+            <Image Name="EmptyBox02.png" />
+            <Image Name="EmptyBox03.png" />
+            <Image Name="EmptyBox04.png" />
+            <Image Name="emptyBoxBtn.png" />
+            <Image Name="EmptyBtn.png" />
+            <Image Name="fotoAvatar.png" />
+            <Image Name="Goldbar.png" />
+            <Image Name="GoldStore01.png" />
+            <Image Name="GoldStore02.png" />
+            <Image Name="GoldStore03.png" />
+            <Image Name="HamerBtn.png" />
+            <Image Name="HamerBtn1.png" />
+            <Image Name="HpBar01.png" />
+            <Image Name="HpBar02.png" />
+            <Image Name="HpBar03.png" />
+            <Image Name="itemBar.png" />
+            <Image Name="ItemBg.png" />
+            <Image Name="ItemBg2.png" />
+            <Image Name="LeftArrow.png" />
+            <Image Name="LeftBtnArrow1.png" />
+            <Image Name="Logo.png" />
+            <Image Name="MenuBtn.png" />
+            <Image Name="PauseBtn.png" />
+            <Image Name="Point.png" />
+            <Image Name="popupBox01.png" />
+            <Image Name="popupBox02.png" />
+            <Image Name="PositionBox.png" />
+            <Image Name="RefreshBtn.png" />
+            <Image Name="RiderBtn.png" />
+            <Image Name="RiderBtn1.png" />
+            <Image Name="RightArrow.png" />
+            <Image Name="RightArrow1.png" />
+            <Image Name="RoadMap.png" />
+            <Image Name="ScrollBar.png" />
+            <Image Name="ScrollBarBtn.png" />
+            <Image Name="StartRaceBtn.png" />
+            <Image Name="StaticBar01.png" />
+            <Image Name="StaticBar02.png" />
+            <Image Name="StaticBar03.png" />
+            <Image Name="TireBtn.png" />
+            <Image Name="TireBtn1.png" />
+            <Image Name="Trophy.png" />
+            <Image Name="WatchVideo.png" />
+          </Folder>
+          <Folder Name="Weapons">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+          </Folder>
+          <Image Name="emptyBoxBtn2.png" />
+          <Image Name="leftBtnArow.png" />
+          <Image Name="RightBtnArrow.png" />
+        </Folder>
+        <Image Name="Grid.png" />
+        <Image Name="O Win.png" />
+        <Image Name="Pause Window.png" />
+        <Image Name="X Win.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
